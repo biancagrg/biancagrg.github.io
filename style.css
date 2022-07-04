@@ -1,0 +1,160 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #006400;
+  background-color: #f6f5ff;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  height: 200px;
+}
+
+.contact-input {
+  margin: 10px;
+  padding-left: 10px;
+}
+
+#button {
+  background-color: #006400;
+  color: #fff;
+  border: #006400;
+  border-radius: 0.5rem;
+}
+
+#main {
+  flex: 1;
+}
+
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 30px;
+  font-weight: bold;
+  margin: 0 55px 30px 55px;
+  color: #006400;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+#banner {
+  background-image: url(banner.jpg);
+  background-size: cover;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 5px 0px;
+  margin: 0;
+}
+
+#avatar {
+  align-self: center;
+}
+
+#header-info {
+  flex: 1;
+  margin: 0 0 0 30px;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  /* background-color: #fff;
+  opacity: 0.9; */
+}
+
+/* p {
+  color: blueviolet;
+} */
+
+#motto {
+  text-align: left;
+  font-size: 25px;
+}
+
+#motto span {
+  font-weight: bold;
+  color: crimson;
+}
+
+.favorite {
+  font-weight: bold;
+  color: green;
+}
+
+#top-menu-bar {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+  background-color: #006400;
+  color: white;
+  opacity: 0.7;
+}
+
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+}
+
+#top-menu-bar a:visited {
+  color: #fff;
+}
+
+#top-menu-bar a:hover {
+  color: #006400;
+  background-color: white;
+  border-radius: 0.3em;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+.page {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgb(151 127 200 / 9%);
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.page h3 {
+  margin-top: 0;
+}
+
+.language-cells {
+  padding: 5px;
+  text-align: center;
+  color: #006400;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+#languages tr:nth-child(odd) {
+  background: #006400;
+  color: #fff;
+}
