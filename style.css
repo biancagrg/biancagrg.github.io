@@ -52,8 +52,6 @@ h2 {
   margin: 0 0 0 30px;
   padding: 1.6rem;
   border-radius: 0.5rem;
-  /* background-color: #fff;
-  opacity: 0.9; */
 }
 
 /* p {
@@ -132,6 +130,10 @@ h2 {
   outline: none;
 }
 
+.contact-input::placeholder {
+  color: #006400;
+}
+
 .contact-input:focus::placeholder {
   color: transparent;
 }
@@ -171,7 +173,8 @@ h2 {
   color: #006400;
 }
 
-td {
+td,
+th {
   padding: 5px 10px;
 }
 
