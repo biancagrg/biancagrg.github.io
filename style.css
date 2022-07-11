@@ -29,7 +29,7 @@ body {
   font-weight: bold;
   margin: 0 55px 30px 55px;
   color: #006400;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
 #banner {
@@ -156,6 +156,7 @@ h2 {
 }
 
 .page {
+  display: none;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgb(151 127 200 / 9%);
@@ -178,7 +179,7 @@ th {
   padding: 5px 10px;
 }
 
-#languages tr:nth-child(odd) {
+#languages-table tr:nth-child(odd) {
   background: #006400;
   color: #fff;
 }

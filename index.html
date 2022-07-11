@@ -18,14 +18,14 @@
           <div id="header-info">
             <h1>CV</h1>
             <h2>Bianca GIURGIU</h2>
-            <p id="motto"><span>Web Development </span>Student @ FastTrackIT</p>
+            <p id="motto"><span>Web Development</span> Student</p>
           </div>
         </div>
         <ul id="top-menu-bar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Languages</a></li>
+          <li><a href="#" onclick="showHomePage()">Home</a></li>
+          <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+          <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
+          <li><a href="#" onclick="showLanguagesPage()">Languages</a></li>
         </ul>
       </div>
     </header>
@@ -62,12 +62,12 @@
         <section class="side-menu-component">M2</section>
       </div>
       <div id="main">
-        <div class="page">
+        <div id="home" class="page">
           <h3>Home</h3>
           <p>About me...</p>
         </div>
 
-        <div class="page">
+        <div id="skills" class="page">
           <h3>Skills</h3>
           <ul>
             <li class="favorite">HTML</li>
@@ -76,14 +76,14 @@
           </ul>
         </div>
 
-        <div class="page">
+        <div id="projects" class="page">
           <h3>Projects</h3>
           <p>No projects yet</p>
         </div>
 
-        <div class="page">
+        <div id="languages" class="page">
           <h3>Known Languages</h3>
-          <table id="languages">
+          <table id="languages-table">
             <tr class="language-cells">
               <th>Language</th>
               <th>Level</th>
