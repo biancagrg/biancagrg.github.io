@@ -11,6 +11,10 @@ body {
   background-color: #f6f5ff;
 }
 
+.side-menu-component {
+  margin: 1.6rem 1.6rem 1.6rem 0;
+}
+
 #content {
   flex: 1;
   display: flex;
@@ -30,6 +34,17 @@ body {
 .contact-input {
   margin: 10px;
   padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #006400;
+  background-color: transparent;
+}
+
+.contact-input:focus {
+  outline: none;
+}
+
+.contact-input:focus::placeholder {
+  color: transparent;
 }
 
 #button {
@@ -130,6 +145,13 @@ h2 {
   border-radius: 0.3em;
   transition: 0.5s;
   border: 1px solid #fff;
+}
+
+.side-menu-component {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgb(151 127 200 / 9%);
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .page {

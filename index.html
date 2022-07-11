@@ -13,7 +13,7 @@
       <div id="banner">
         <div id="header-wrapper">
           <div id="avatar">
-            <img src="me.png" alt="Image not found" width="200" />
+            <img src="me.png" alt="Image not found" width="180" />
           </div>
           <div id="header-info">
             <h1>CV</h1>
@@ -32,29 +32,40 @@
 
     <section id="content">
       <div id="side-menu">
-        <section id="contact-me">
+        <section id="contact-me" class="side-menu-component">
+          <h3>Contact me</h3>
           <form id="contact-form" action="" method="get">
-            <label for="messsage">Your message</label>
-            <input
-              type="text"
-              name="message"
-              id="message"
-              class="contact-input"
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              placeholder="Your email"
-              name="mail"
-              id="email"
-              class="contact-input"
-            />
+            <div class="contact-data">
+              <!-- <label for="contact-name">Name</label> -->
+              <input
+                type="text"
+                name="name"
+                id="contact-name"
+                placeholder="Your Name"
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-data">
+              <!-- <label for="contact-email">Email</label> -->
+              <input
+                type="email"
+                name="mail"
+                id="contactmail"
+                placeholder="Your Mail"
+                class="contact-input"
+              />
+            </div>
+
             <button type="submit" id="button">Contact me</button>
           </form>
         </section>
-        <section>M2</section>
+        <section class="side-menu-component">M2</section>
       </div>
       <div id="main">
+        <div class="page">
+          <h3>Home</h3>
+        </div>
+
         <div class="page">
           <h3>Skills</h3>
           <ul>
@@ -65,8 +76,16 @@
         </div>
 
         <div class="page">
+          <h3>Projects</h3>
+        </div>
+
+        <div class="page">
           <h3>Known Languages</h3>
           <table id="languages">
+            <tr class="language-cells">
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
             <tr class="language-cells">
               <td>Romanian</td>
               <td>Native</td>
