@@ -37,24 +37,10 @@ function hideAllPages() {
   hide("languages");
 }
 
-function showHomePage() {
+function showPage(id) {
+  console.warn("please show me this page", id);
   hideAllPages();
-  show("home");
+  show(id);
 }
 
-function showSkillsPage() {
-  hideAllPages();
-  show("skills");
-}
-
-function showProjectsPage() {
-  hideAllPages();
-  show("projects");
-}
-
-function showLanguagesPage() {
-  hideAllPages();
-  show("languages");
-}
-
-showHomePage();
+showPage("home");
