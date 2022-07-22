@@ -101,13 +101,13 @@ h2 {
   color: #fff;
 }
 
-#top-menu-bar a:hover {
-  color: #006400;
+/* #top-menu-bar0 a:hover {
+  color: #00640;
   background-color: white;
   border-radius: 0.3em;
   transition: 0.5s;
   border: 1px solid #fff;
-}
+} */
 
 #contact-form {
   display: flex;
