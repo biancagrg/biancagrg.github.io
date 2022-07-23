@@ -101,14 +101,6 @@ h2 {
   color: #fff;
 }
 
-/* #top-menu-bar0 a:hover {
-  color: #00640;
-  background-color: white;
-  border-radius: 0.3em;
-  transition: 0.5s;
-  border: 1px solid #fff;
-} */
-
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -182,4 +174,16 @@ th {
 #languages-table tr:nth-child(odd) {
   background: #006400;
   color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #006400;
+}
+
+footer a {
+  text-decoration: none;
+  color: currentColor;
 }
