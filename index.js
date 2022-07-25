@@ -37,36 +37,15 @@ function hideAllPages() {
   hide("languages");
 }
 
+var activePage = "home";
+
 function showPage(id) {
-  console.warn("please show me this page", id);
   hideAllPages();
   show(id);
+  console.warn("previewpage", activePage);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
 
-var clickedElement = "menu-home";
-
-function menuHover(id) {
-  document.getElementById(id).style.color = "#006400";
-  document.getElementById(id).style.background = "white";
-  document.getElementById(id).style.borderRadius = "0.3em";
-  document.getElementById(id).style.transition = "0.5s";
-  document.getElementById(id).style.border = "1px solid #fff";
-}
-
-function menuStopHover(id) {
-  if (clickedElement != id) {
-    document.getElementById(id).style.color = "#fff";
-    document.getElementById(id).style.background = "#006400";
-    document.getElementById(id).style.border = "#006400";
-  }
-}
-
-function menuClick(id) {
-  var lastClickedElement = clickedElement;
-  clickedElement = id;
-  menuStopHover(lastClickedElement);
-  menuHover(id);
-}
-
-showPage("home");
-menuClick("menu-home");
+showPage(activePage);
