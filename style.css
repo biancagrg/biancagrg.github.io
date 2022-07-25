@@ -100,11 +100,13 @@ h2 {
 #top-menu-bar a:hover {
   color: #006400;
   background-color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 #top-menu-bar a.active {
   color: #006400;
   background-color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 #contact-form {
