@@ -55,15 +55,10 @@ function initEvents() {
 showPage(activePage);
 initEvents();
 
-function displaySkills() {
+function displaySkills(skills) {
   var ul = document.querySelector("#skills ul");
-  var skills = [
-    { name: "html", endorcements: 15, favorite: true },
-    { name: "css", endorcements: 5, favorite: false },
-    { name: "js", endorcements: 10, favorite: true },
-  ];
   skills.sort(function (a, b) {
-    return a.endorcements - b.endorcements;
+    return b.endorcements - a.endorcements;
     // if (a.name.toLowerCase() < b.name.toLowerCase()) {
     //   return -1;
     // }
@@ -78,4 +73,14 @@ function displaySkills() {
   }
 }
 
-displaySkills();
+function loadSkills() {
+  fetch("skills.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (serverSkills) {
+      displaySkills(serverSkills);
+    });
+}
+
+loadSkills();
