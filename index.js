@@ -56,16 +56,15 @@ showPage(activePage);
 initEvents();
 
 function displaySkills() {
-  console.info("displaySkills");
-  for (var i = 1; i < 3; i++) {
-    console.info(`${i} * 5 = ${i * 5}`);
-  }
-
   var ul = document.querySelector("#skills ul");
-  var skills = ["html", "css", "js"];
-  console.info(ul);
+  var skills = [
+    { name: "html", endorcements: 15 },
+    { name: "css", endorcements: 5 },
+    { name: "js", endorcements: 10 },
+  ];
+  console.info(skills);
   for (var i = 0; i < skills.length; i++) {
-    ul.innerHTML += `<li>${skills[i]}</li>`;
+    ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements}</li>`;
   }
 }
 displaySkills();
