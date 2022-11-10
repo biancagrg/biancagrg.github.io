@@ -166,10 +166,25 @@ h2 {
 
 .page h3 {
   margin-top: 0;
+  font-size: 25px;
 }
 
 h4 {
   margin-bottom: 0;
+}
+
+#projects li,
+#skills li {
+  padding: 0.4rem;
+}
+
+#projects a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#projects a:hover {
+  text-decoration: underline;
 }
 
 .language-cells {
