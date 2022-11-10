@@ -175,17 +175,21 @@ h4 {
 .language-cells {
   padding: 5px;
   text-align: center;
-  color: #006400;
 }
 
 td,
 th {
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
 #languages-table tr:nth-child(odd) {
-  background: #006400;
+  background: #006400c2;
   color: #fff;
+}
+
+th {
+  padding: 15px 20px;
+  background: #006400;
 }
 
 footer {
