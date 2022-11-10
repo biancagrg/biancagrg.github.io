@@ -160,12 +160,16 @@ h2 {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgb(151 127 200 / 9%);
-  padding: 1.6rem;
+  padding: 2.5rem;
   margin-bottom: 1.6rem;
 }
 
 .page h3 {
   margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 0;
 }
 
 .language-cells {
